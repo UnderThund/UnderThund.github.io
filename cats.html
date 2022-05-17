@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required Bootstrap meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <script>
+            function Kevin() {
+            let guess = prompt("Here is a hint: His name is also the name of someone in this CS class.");
+            if (guess != "Kevin") {
+                alert("Did you really think I'd name him " + guess + "? Try again.", 'danger');
+                }
+            else { document.getElementById("kevin").removeAttribute("hidden");
+                }
+            }
+            function Minerva() {
+            let guess = prompt("Here is a hint: Her name is the Roman name of the Greek goddess of wisdom.");
+            if (guess != "Minerva") {
+                alert("Did you really think I'd name her " + guess + "? Try again.", 'danger');
+                }
+            else { document.getElementById("minerva").removeAttribute("hidden");
+                }
+            }
+        </script>
+        <title>My Cats</title>
+
+    </head>
+    <body>
+        <!-- navigation of page -->
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="dog.html">Dog</a>
+          </li>
+          <li>
+            <a href="cats.html">Cats</a>
+          </li>
+          <li>
+            <a href="chicken.html">Chickens</a>
+          </li>
+        </ul>
+        <br>
+        <h1 style="text-align:center">These are my Cats</h1>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 30rem">
+                  <img src="media/kevin.jpg" class="card-img-top" alt="kevin" id="kevin" hidden="hidden">
+                  <div class="card-body">
+                    <h5 class="card-title">Cat Number 1</h5>
+                    <p class="card-text">One time this cat ran directly into a cabinet door. We love him. He is really afraid of the dog and most people and spends most of his time hiding under the bathtub. He is really good at catching mice, decapitating them, and bringing their headless mice bodies to your room.</p>
+                    <button onclick="Kevin()">Click to guess Cat Number 1's name</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 30rem;">
+                  <img src="media/minerva.jpg" class="card-img-top" alt="minerva" id="minerva" hidden="hidden">
+                  <div class="card-body">
+                    <h5 class="card-title">Cat Number 2</h5>
+                    <p class="card-text">This cat is the adventurous of the two. She loves exploring and getting major head scritches. She loves to turn on her belly so you can pet her belly but DO NOT PET HER BELLY, she does not want you to pet it she is merely showing you. She is also incredibly patient so she won't get mad if you touch it by mistake.</p>
+                    <button onclick="Minerva()">Click to guess Cat Number 2's name</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <h4 style="text-align:center">My cats are so adorable I've password protected them. Guess their names and you will see their face.</h4>
+        </body>
+</html>
